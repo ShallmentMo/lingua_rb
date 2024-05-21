@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lingua (0.1.0)
+    lingua_rb (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -45,7 +45,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  lingua!
+  lingua_rb!
   minitest (~> 5.16)
   rake (~> 13.0)
   rake-compiler

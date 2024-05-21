@@ -3,7 +3,7 @@
 require_relative "lib/lingua/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "lingua"
+  spec.name = "lingua_rb"
   spec.version = Lingua::VERSION
   spec.authors = ["ShallmentMo"]
   spec.email = ["shallmentmo@gmail.com"]
