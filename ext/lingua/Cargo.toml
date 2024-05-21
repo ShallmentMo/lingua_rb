@@ -11,3 +11,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 magnus = { version = "0.6.2" }
+lingua = "1.6.2"
