@@ -1,14 +1,11 @@
 use lingua::{Language, LanguageDetector, LanguageDetectorBuilder};
 use magnus::{function, prelude::*, Error, Ruby};
 
-fn detect(subject: String) -> String {
+fn detect(subject: String) -> Option<String> {
     let detector: LanguageDetector = LanguageDetectorBuilder::from_all_languages().build();
     let detected_language: Option<Language> = detector.detect_language_of(subject);
 
-    match detected_language {
-        Some(language) => language.to_string(),
-        None => "".to_string(),
-    }
+    detected_language.map(|language| language.to_string())
 }
 
 #[magnus::init]
