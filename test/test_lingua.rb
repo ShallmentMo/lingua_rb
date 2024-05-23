@@ -7,7 +7,7 @@ class TestLingua < Minitest::Test
     refute_nil ::Lingua::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_detect_english
+    assert_equal "English", Lingua.detect("this is definitely English")
   end
 end
