@@ -1,5 +1,10 @@
 # Lingua
 
+[![Gem Version](https://badge.fury.io/rb/lingua_rb.svg)](https://badge.fury.io/rb/lingua_rb)
+![CI](https://github.com/ShallmentMo/lingua_rb/actions/workflows/main.yml/badge.svg)
+![License](https://img.shields.io/github/license/ShallmentMo/lingua_rb)
+![Gems](https://img.shields.io/gem/dt/lingua_rb)
+
 Lingua is an [Ruby][0] wrapper for the [Rust][1] [lingua][2] crate with [magnus][3].
 
 ## Installation
