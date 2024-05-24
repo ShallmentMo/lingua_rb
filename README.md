@@ -22,7 +22,18 @@ If bundler is not being used to manage dependencies, install the gem by executin
 ```ruby
 irb> Lingua.detect("this is definitely English")
 => "English"
+
+irb> Lingua.detect("וזה בעברית")
+=> "Hebrew"
+
+irb> Lingua.detect("państwowych", languages: %w[english russian polish])
+=> "Polish"
+
+irb> Lingua.detect("כלב", languages: %w[english russian polish])
+=> nil
 ```
+
+**Note:** The value of `languages` option should be an array of String. An array of symbols will be ignored.
 
 ## Development
 
